@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - AnalyticsLab</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">AnalyticsLab</div>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="analytics.html">Analytics</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Contact / Feedback Form</h1>
+      <p>
+        Submit feedback or request a feature. Your form submission will generate an analytics record.
+      </p>
+    </section>
+
+    <section class="form-box">
+      <form id="feedbackForm">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+        <label for="message">Feedback / Request</label>
+        <textarea id="message" name="message" placeholder="Write your feedback..." required></textarea>
+
+        <button type="submit" class="btn" style="width:100%;">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/analytics.js"></script>
+</body>
+</html>

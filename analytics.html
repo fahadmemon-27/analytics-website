@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analytics - AnalyticsLab</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">AnalyticsLab</div>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="analytics.html" class="active">Analytics</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Collected Analytics Data</h1>
+      <p>
+        This page shows user interaction logs collected from the website. This table is scrape-friendly.
+      </p>
+    </section>
+
+    <section class="table-box">
+      <div class="table-actions">
+        <button id="exportCsvBtn" class="btn">Export CSV</button>
+        <button id="exportJsonBtn" class="btn" style="margin-left:10px;">Export JSON</button>
+        <button id="clearDataBtn" class="btn" style="margin-left:10px;">Clear Analytics Data</button>
+      </div>
+
+
+
+      <table id="analyticsTable">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Page</th>
+            <th>Action</th>
+            <th>Element</th>
+            <th>Time Spent (sec)</th>
+            <th>Timestamp</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Filled using JS -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="js/analytics.js"></script>
+</body>
+</html>
